@@ -1,0 +1,9 @@
+<form action="<%=student_path(@student)%>" method="patch">
+    <Label>Active Status:</Label>
+    <%if @student.active%>
+        <input type="checkbox" name="student[active]" id="student_active" checked>
+    <%else%>
+        <input type="checkbox" name="student[active]" id="student_active">
+        <%end%>
+        <input type="submit" value="Submit">
+</form>
