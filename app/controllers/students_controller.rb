@@ -1,11 +1,16 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: :show
-  
+
   def index
     @students = Student.all
   end
 
   def show
+  end
+end
+
+  def activate
+    activate_student_path(@student)
   end
 
   private
