@@ -39,3 +39,16 @@ In this lab you will be building out the Student management dashboard for the Fl
 - [URL Helper Documentation](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/rails-url-helpers-lab'>Rails URL Helpers Lab</a> on Learn.co and start learning to code for free.</p>
+
+
+
+
+Things you have questions on:
+routes.rb… what is it carrying again? And why is it not in controllers
+URL HELPERS: register GET  /register(.:format)  users#new
+How do I add column via terminal?
+def activate
+   @student = Student.find(params[:id])
+   @student.active = !@student.active
+   @student.save
+   redirect_to student_path(@student)
