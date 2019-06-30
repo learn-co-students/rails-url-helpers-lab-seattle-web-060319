@@ -1,0 +1,12 @@
+<h1>
+  <form action="/students/<%= @student.id %>/activate" method="POST">
+   <input type="hidden" name="_method" value="patch">
+
+  <label><%= @student.to_s %> </label>
+  <br>
+  <br>
+   <label>Active?</label>
+   <input type="checkbox" name="student_active" value="<%= student.active %>" id="<%= student.active %>" <%='checked' if @student.active == true %>>
+  <br>
+  <input type="submit" value="Submit"> </form>
+  </h1>
